@@ -204,7 +204,7 @@ int main()
     pair dmin = find_dmin(list, 0, k - 1); // en yakın çift
 
     free(list);
-    close(fp);
+    fclose(fp);
     // sonucu yazdırma
     printf("En yakin ikili:\n(%d,%d)\n(%d,%d)", dmin.p1.x, dmin.p1.y, dmin.p2.x, dmin.p2.y);
 }
